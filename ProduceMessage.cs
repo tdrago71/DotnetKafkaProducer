@@ -10,10 +10,10 @@ namespace KafkaProducer
     public class ProduceMessage
     {
         public async Task CreateMessage()
-        {
+        {            
             var config = new ProducerConfig
             {
-                BootstrapServers = "localhost:9092",
+                BootstrapServers = "localhost:29092",
                 ClientId = "my-app",
                 BrokerAddressFamily = BrokerAddressFamily.V4,
             };
